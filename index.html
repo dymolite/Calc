@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="calc">
+                <div class="calc-header">
+                    <input type="text" class="input" id="input" readonly>
+                    <div class="output" id="output"></div>
+                </div>
+                <div class="calc-body">
+                    <button onclick="delAll(this)" class="calc-sym">C</button>
+                    <button onclick="addOperator('-1')" class="calc-sym">+/-</button>
+                    <button onclick="" class="calc-sym">%</button>
+                    <button onclick="addOperator('/')" class="calc-sym">÷</button>
+                    <button onclick="inpNum(7)">7</button>
+                    <button onclick="inpNum(8)">8</button>
+                    <button onclick="inpNum(9)">9</button>
+                    <button onclick="addOperator('*')" class="calc-sym">×</button>
+                    <button onclick="inpNum(4)">4</button>
+                    <button onclick="inpNum(5)">5</button>
+                    <button onclick="inpNum(6)">6</button>
+                    <button onclick="addOperator('-')" class="calc-sym">-</button>
+                    <button onclick="inpNum(1)">1</button>
+                    <button onclick="inpNum(2)">2</button>
+                    <button onclick="inpNum(3)">3</button>
+                    <button onclick="addOperator('+')" class="calc-sym">+</button>
+                    <button onclick="inpNum(0)">0</button>
+                    <button onclick="addDot(this)">●</button>
+                    <button onclick="del(this)">DEL</button>
+                    <button onclick="result(this)" class="calc-equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

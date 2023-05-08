@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc {
+    width: 25%;
+    font-family: 'Nunito', sans-serif !important;
+}
+.calc-header {
+    height: 150px;
+    background-color: #37474E;
+    border-radius: 14px 14px 0 0;
+    padding: 30px 15px;
+    transition: .2s;
+}
+.calc-header .input, .calc-header .output {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    text-align: right;
+}
+.calc-header .input {
+    font-size: 50px;
+}
+.calc-header .output {
+    font-size: 30px;
+    height: 30px;
+}
+.calc-body {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 0 0 14px 14px;
+    background-color: #18202B;
+    padding-bottom: 25px;
+}
+.calc-body button, .calc-header .input, .calc-header .output{
+    color: #fff;
+}
+.calc-body button {
+    font-size: 20px;
+    width: 25%;
+    height: 66px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s;
+}
+.calc-body button:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+.calc-body button:focus {
+    background-color: rgba(0, 0, 0, .4);
+}
+.calc-body .calc-sym {
+    background-color: rgba(255, 255, 255, .1);
+}
+.calc-body .calc-sym:focus {
+    color: #9a54fd;
+}
+.calc-body .calc-equal {
+    background-color: #9a54fd;
+    height: 50px;
+    width: 50px;
+    margin: 8px auto;
+    border-radius: 50%;
+}
+.calc-body .calc-equal:hover {
+    background-color: #6f15ec;
+}
+.calc-body .calc-equal:focus {
+    color:#18202B;
+    background-color: #fff;
+}
